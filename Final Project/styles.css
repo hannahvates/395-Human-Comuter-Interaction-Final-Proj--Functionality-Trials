@@ -1,0 +1,38 @@
+.homepage_img {
+    background-image: url(homepage-img.png);
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 1em;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "area1"
+    "area1"
+    "area2"
+    "area2"
+    "area3"
+}
+
+#homepage_header{
+  text-align: center;
+  color: white;
+  font-family: "Avenir", sans-serif;
+  font-size: 5em;
+  grid-area: area1;
+}
+
+.homepage_text{
+  text-align: center;
+  color: white;
+  font-family: "Avenir", sans-serif;
+  font-size: 1.5em;
+}
+
+.sub1{
+  grid-area: area2;
+}
+
+.sub2{
+  grid-area: area3;
+}

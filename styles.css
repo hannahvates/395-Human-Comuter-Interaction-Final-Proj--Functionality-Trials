@@ -1,0 +1,22 @@
+.homepage_img {
+    background-image: url(homepage-img.png);
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 1em;
+}
+
+#homepage_header{
+  text-align: center;
+  color: white;
+  font-family: "Avenir", sans-serif;
+  font-size: 5em;
+}
+
+.homepage_subtext{
+  margin-top: 12em;
+  text-align: center;
+  color: white;
+  font-family: "Avenir", sans-serif;
+  font-size: 1.5em;
+}

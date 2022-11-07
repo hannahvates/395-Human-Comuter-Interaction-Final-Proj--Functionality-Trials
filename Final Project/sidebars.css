@@ -88,6 +88,7 @@ main {
 
 .bi {
   vertical-align: -0.20em;
+  font-size: 1.5em;
   fill: currentColor;
 }
 
@@ -107,4 +108,8 @@ main {
   text-align: center;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+}
+
+.nav-link {
+  font-size: 1.2em;
 }

@@ -1,38 +1,51 @@
-.homepage_img {
-    background-image: url(homepage-img.png);
-    background-size: cover;
-    height: 100%;
-    margin: 0;
-    padding: 1em;
-    display: grid;
-    gap: 1rem;
-    grid-template-areas:
-    "area1"
-    "area1"
-    "area2"
-    "area2"
-    "area3"
+@font-face {
+  font-family: CaveatBrush;
+  src: url(fonts/CaveatBrush-Regular.ttf);
 }
 
-#homepage_header{
-  text-align: center;
-  color: white;
-  font-family: "Avenir", sans-serif;
-  font-size: 5em;
-  grid-area: area1;
+@font-face {
+  font-family: Boogaloo;
+  src: url(fonts/Boogaloo-Regular.ttf);
+}
+
+.homepage_img {
+  background-image: url(images/homepage-img.png);
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 1em;
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+  "area1"
+  "area2"
+  "area2"
 }
 
 .homepage_text{
   text-align: center;
   color: white;
-  font-family: "Avenir", sans-serif;
-  font-size: 1.5em;
 }
 
-.sub1{
+.head {
+  grid-area: area1;
+  padding-top: 1em;
+}
+
+.sub {
   grid-area: area2;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.sub2{
-  grid-area: area3;
+#homepage_header{
+  font-family: CaveatBrush, cursive;
+  text-shadow: 3px 2px black;
+  font-size: 9em;
+}
+
+#homepage_text{
+  font-family: Boogaloo, sans-serif;
+  font-size: 2.5em;
+  text-shadow: 2px 2px black;
 }

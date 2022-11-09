@@ -1,7 +1,3 @@
-ul {
-  list-style: none;
-}
-
 .sidebar {
   position: fixed;
   left: 0px;
@@ -12,12 +8,12 @@ ul {
   color: white;
 }
 
-.sidebar_menu {
+.section_1_menu {
   padding: 0px;
   margin: 0px;
 }
 
-.sidebar_item {
+.section_1_item {
   list-style: none;
   font-family: arial, sans-serif;
   box-sizing: border-box;
@@ -30,20 +26,6 @@ ul {
   right: 0%;
   bottom: 0px;
   top: 10%;
-  text-align: right;
-}
-
-.sent_message {
-  margin: 2rem;
-  text-align: right;
-}
-
-.sent_message_span {
-  background-color: blue;
-  color: white;
-  padding: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
 }
 
 .class_list {

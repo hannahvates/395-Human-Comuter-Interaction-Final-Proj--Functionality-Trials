@@ -7,22 +7,26 @@
   </head>
   <body>
     <div class="sidebar">
-      <ul class="section_1_menu">
-        <li class="section_1_item">Home</li>
-        <li class="section_1_item">Chat</li>
-        <li class="section_1_item">Profile</li>
-        <li class="section_1_item">Search</li>
-        <li class="section_1_item">Schedule</li>
+      <ul class="sidebar_menu">
+        <li class="sidebar_item">Home</li>
+        <li class="sidebar_item">Chat</li>
+        <li class="sidebar_item">Profile</li>
+        <li class="sidebar_item">Search</li>
+        <li class="sidebar_item">Schedule</li>
       </ul>
     </div>
-    <div class="messages">
+    <div class="messages" id="messages">
       Implement chat messages with JavaScript
+      <ul id="message_block">
+
+      </ul>
     </div>
     <div class="class_list">
       Implement class list with JavaScript
     </div>
     <div class="chat_bar">
-      <input type="text" name="chatbox" id="chat_box" placeholder="Enter message here"><input type="button" name="send_button" id="send" value="Send">
+      <input type="text" name="chatbox" id="chat_box" placeholder="Enter message here"><input type="button" name="send_button" onclick="sendMessage()" value="Send">
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

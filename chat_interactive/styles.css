@@ -1,3 +1,7 @@
+ul {
+  list-style: none;
+}
+
 .sidebar {
   position: fixed;
   left: 0px;
@@ -8,12 +12,12 @@
   color: white;
 }
 
-.section_1_menu {
+.sidebar_menu {
   padding: 0px;
   margin: 0px;
 }
 
-.section_1_item {
+.sidebar_item {
   list-style: none;
   font-family: arial, sans-serif;
   box-sizing: border-box;
@@ -26,6 +30,19 @@
   right: 0%;
   bottom: 0px;
   top: 10%;
+  text-align: right;
+}
+
+.sent_message {
+  background-color: blue;
+  color: white;
+  margin: 1rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  float: right;
 }
 
 .class_list {

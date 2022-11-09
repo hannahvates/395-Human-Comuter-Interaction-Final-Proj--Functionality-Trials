@@ -12,17 +12,10 @@ function sendMessage() { //Function that takes contents of text input and displa
   input_box.value = ""; //Input is cleared
   message_count++; //Increment message count
   document.getElementById("messages").innerHTML = ""; //Clear out contents of messages
-  if (message_count === 1) {
+  for (let i = 0; i < message_count; i++) {
     let child = document.createElement('div'); //Prepare value to attach to HTML
     child.className = "sent_message";
-    child.innerHTML = input_list[0];
+    child.innerHTML = `<span class="sent_message_span">${input_list[message_count-i-1]}</span>`;
     message_obj.appendChild(child);
-  } else {
-    for (let i = 0; i < message_count; i++) {
-      let child = document.createElement('div'); //Prepare value to attach to HTML
-      child.className = "sent_message";
-      child.innerHTML = input_list[message_count-i-1];
-      message_obj.appendChild(child);
-    }
   }
 }

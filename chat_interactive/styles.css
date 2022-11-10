@@ -23,13 +23,17 @@ ul {
   box-sizing: border-box;
 }
 
-.messages {
-  width: 70%;
-  position: relative;
-  left: 30%;
-  right: 0%;
+.class_list {
+  position: fixed;
+  left: 10%;
+  top: 0px;
   bottom: 0px;
-  top: 10%;
+  background-color: rgb(230,230,230);
+  width: 20%;
+}
+
+.messages {
+  position: relative;
   text-align: right;
 }
 
@@ -44,15 +48,6 @@ ul {
   padding: 1rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
-}
-
-.class_list {
-  position: fixed;
-  left: 10%;
-  top: 0px;
-  bottom: 0px;
-  background-color: rgb(230,230,230);
-  width: 20%;
 }
 
 .chat_bar {

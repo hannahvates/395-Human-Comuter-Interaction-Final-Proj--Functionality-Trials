@@ -18,8 +18,9 @@
     <div class="messages" id="messages">
       No messages.
     </div>
-    <div class="class_list">
-        Implement class list with JavaScript
+    <div class="class_list" id="class_list">
+        <p id="no_classes_text">You currently have no classes selected. Add some using the search feature.</p>
+        <input type="button" name="add_class_button" value="Add Class" id="add_class_button" onclick="addClass()"> <!--This button is only for testing, do not include in final!-->
     </div>
     <div class="chat_bar">
       <input type="text" name="chatbox" id="chat_box" placeholder="Enter message here"><input type="submit" name="send_button" onclick="sendMessage()" value="Send">

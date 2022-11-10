@@ -37,6 +37,11 @@ ul {
   text-align: right;
 }
 
+.selected_chat {
+  background-color: rgb(69,71,70);
+  color: white;
+}
+
 .sent_message {
   margin: 2rem;
   text-align: right;

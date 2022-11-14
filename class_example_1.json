@@ -1,0 +1,47 @@
+{"Major": [
+          {
+          "major_name":"Computer Science",
+            "major_classes": [
+              {
+                "class_1": "315 Algorithms",
+                "course_name": "Algorithms",
+                "course_number": "315"
+              },
+              {
+                "class_2": "395 HCI",
+                "course_name": "HCI",
+                "course_number": "395"
+              }
+            ]
+          },
+
+          {
+          "major_name":"Physics",
+            "major_classes": [
+              {
+                "class_1": "315 Algorithms",
+                "course_name": "Algorithms",
+                "course_number": "315"
+              }
+            ]
+          },
+          {
+            "major_name":"Biology",
+              "major_classes": [
+                {
+                  "class_1": "315 Algorithms",
+                  "course_name": "Algorithms",
+                  "course_number": "315"
+                }
+              ]
+          }
+    ]
+  }
+
+
+
+
+
+
+
+

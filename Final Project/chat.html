@@ -32,7 +32,7 @@
             </a>
           </li>
           <li>
-            <a href="chat.html" class="nav-link text-white">
+            <a href="chat.html" class="nav-link active">
               <i class="material-icons bi pe-none me-2">forum</i>
               Chat
             </a>
@@ -45,7 +45,7 @@
           </li>
         </ul>
         <hr>
-        <div class="profile_item">
+        <div class="profile_item_inactive">
           <a href="profile.html" class="d-flex align-items-center text-white text-decoration-none nav-link">
             <i class="material-icons rounded-circle me-2" style="font-size: 1.5em;">person</i>
             <!-- <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2"> -->
@@ -56,57 +56,48 @@
 
       <div class="b-example-divider b-example-vr" style="width: 0%;"></div>
 
-      <div class="profilepage" style="width: 80%;">
-        <div class="profile">
-          <div class="profile_wrapper">
-            <div class="profile_information">
-              <div class="details_image">
-                <div class="image">
-                  <img src="images/profile.png" alt="">
+        <div class="chat_selection" style="width: 30%;">
+          <div class="selection_header">
+            <h2>Chats</h2>
+          </div>
+          <div class="selection_groups">
+            <ul>
+              <li><div class="active_chat">
+                <!-- <div class="active_blocker"></div> -->
+                <div class="chat_picture">
+                  <img src="images/computer-icon.png" alt="">
                 </div>
-                <div class="name_pronouns">
-                  <h2>John Doe</h2>
-                  <p>He/Him/His</p>
+                CMSC 395
+              </div></li>
+              <li><div class="chatname">
+                <div class="chat_picture">
+                  <img src="images/calculator-icon.png" alt="" id="calculator">
                 </div>
+                MATH 212
+              </div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="chat_box" style="width: 70%;">
+          <div class="box_header">
+            <h2>CMSC 395</h2>
+          </div>
+          <div class="chat_text">
+            <div class="text_messages">
+              <div class="sent_message">
+                <span class="sent_message_span">Hi!</span>
               </div>
-              <div class="details_details">
-                <div class="school_details">
-                  <table>
-                    <tr>
-                      <td><div class="username">
-                        <h3>Username</h3>
-                        <p>John D</p>
-                      </div></td>
-                      <td><div class="class_standing">
-                        <h3>Year</h3>
-                        <p>Second-Year Student</p>
-                      </div></td>
-                    </tr>
-                    <tr>
-                      <td><div class="major">
-                        <h3>Major/s</h3>
-                        <p>Computer Science</p>
-                      </div></td>
-                      <td><div class="minor">
-                        <h3>Minor/s</h3>
-                        <p>None</p>
-                      </div></td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <div class="profile_classes">
-                <h2>Classes</h2>
-                <ul>
-                  <li>MATH 212: Calculus II</li>
-                  <li>CMSC 301: Computer Organization</li>
-                  <li>CMSC 395: Human Computer Interaction</li>
-                </ul>
+            </div>
+            <div class="text_input">
+              <div class="text_input_wrapper">
+                <i class="material-icons input_icons">add</i>
+                <input type="text" name="" value="" placeholder="Enter message here" id="text"><input type="submit" name="send_button" onclick="sendMessage()" value="Send" id="send">
+                <i class="material-icons input_icons">image</i>
+                <i class="material-icons input_icons">sentiment_satisfied</i>
               </div>
             </div>
           </div>
         </div>
-     </div>
     </main>
   </body>
 </html>

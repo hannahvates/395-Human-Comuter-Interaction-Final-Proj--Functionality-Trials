@@ -1,0 +1,3 @@
+id "text_messages" added (same place as where the class was added)
+ids unique to each class added to cs 395 and math 212
+added 'onclick=(loadMessages(param))' attribute to both classes, param is 0 for cs 395 and 1 for math 212

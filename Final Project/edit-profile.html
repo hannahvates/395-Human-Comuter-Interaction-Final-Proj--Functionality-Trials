@@ -60,16 +60,17 @@
         <div class="profile">
           <div class="profile_wrapper">
             <div class="profile_information">
-              <div class="edit_profile_button">
-                <button type="button" name="button" onclick="location.href='edit-profile.html';">Edit Profile</button>
-              </div>
               <div class="details_image">
                 <div class="image">
                   <img src="images/profile.png" alt="">
                 </div>
                 <div class="name_pronouns">
                   <h2>John Doe</h2>
-                  <p>He/Him/His</p>
+                  <p><select id="gender" name="gender">
+                  <option value="he">He/Him/His</option>
+                  <option value="she">She/Her/Hers</option>
+                  <option value="they">They/Them/Their</option>
+                </select></p>
                 </div>
               </div>
               <div class="details_details">
@@ -79,20 +80,38 @@
                         <td><div class="username">
                           <h3>Username</h3>
                           <p>John D</p>
+                          <p><input type="text" name="" value="" placeholder="username"></p>
                         </div></td>
                         <td><div class="class_standing">
                           <h3>Year</h3>
                           <p>Sophomore</p>
+                          <p><select id="class_year" name="class_year">
+                            <option value="" disabled selected>Select your year</option>
+                          <option value="freshman">Freshman</option>
+                          <option value="sophomore">Sophomore</option>
+                          <option value="junior">Junior</option>
+                          <option value="senior">Senior</option>
+                        </select></p>
                         </div></td>
                       </tr>
                       <tr>
                         <td><div class="major">
                           <h3>Major/s</h3>
                           <p>Computer Science</p>
+                          <p><select id="majors" name="majors" multiple>
+                          <option value="cmsc">Computer Science</option>
+                          <option value="math">Mathematics</option>
+                          <option value="phil">Philosophy</option>
+                        </select></p>
                         </div></td>
                         <td><div class="minor">
                           <h3>Minor/s</h3>
                           <p>None</p>
+                          <p><select id="minors" name="minors" multiple>
+                          <option value="cmsc">Computer Science</option>
+                          <option value="math">Mathematics</option>
+                          <option value="phil">Philosophy</option>
+                        </select></p>
                         </div></td>
                       </tr>
                     </table>
@@ -102,9 +121,9 @@
                 <div class="class_list">
                   <h2>Classes</h2>
                   <ul>
-                    <li>MATH 212: Calculus II</li>
-                    <li>CMSC 301: Computer Organization</li>
-                    <li>CMSC 395: Human Computer Interaction</li>
+                    <li><i class="material-icons">close</i>MATH 212: Calculus II</li>
+                    <li><i class="material-icons">close</i>CMSC 301: Computer Organization</li>
+                    <li><i class="material-icons">close</i>CMSC 395: Human Computer Interaction</li>
                   </ul>
                 </div>
               </div>

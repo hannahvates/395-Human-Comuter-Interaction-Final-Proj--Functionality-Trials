@@ -60,6 +60,7 @@
 
 .searchpage{
   text-align: center;
+  height: 100vh;
   /* background-color: #E3F2F9; */
 }
 
@@ -67,6 +68,8 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   width: 100%;
+  max-height: 25%;
+  margin-bottom: 3rem;
   /* border: solid black; */
 }
 
@@ -110,11 +113,10 @@
 }
 
 .search_results{
-  padding-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  height: 75%;
+  height: 70%;
   /* border: solid black; */
 }
 
@@ -124,10 +126,11 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 85%;
+  height: 80%;
   background-color: #DFEBD5;
   overflow-x: hidden;
   overflow-y: auto;
+  /* border: solid black; */
 }
 
 .results_box table{
@@ -328,25 +331,53 @@ input[type="checkbox"]:checked::before {
   height: 80%;
   display: grid;
   gap: 1rem;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr;
   grid-template-columns: 1fr 2fr;
   color: black;
   padding: 3rem;
-  border: solid black;
+  /* border: solid black; */
+}
+
+.edit_profile_button{
+  text-align: right;
+  padding-right: 1rem;
+  /* border: solid black; */
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.edit_profile_button button{
+  border-radius: 0.6em;
+  font-size: 1.5em;
+  font-family: Boogaloo, sans-serif;
+  background-color: #219ebc;
+  border: solid #219ebc;
+  color: white;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.edit_profile_button button:hover{
+  background-color: #ffb703;
+  border: solid #ffb703;
+  color: black;
 }
 
 .details_image{
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
   display: grid;
   gap: 0.5rem;
   grid-template-rows: 0.3fr 0.5fr 1fr;
   background-color: white;
-  border: solid 2px black;
+  border: solid 2px #879094;
   border-radius: 3em;
-  box-shadow: 3px 3px grey;
+  box-shadow: 5px 5px #9FAEB7;
 }
 
 .image {
@@ -387,17 +418,17 @@ input[type="checkbox"]:checked::before {
 }
 
 .details_details{
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
   /* border: solid black; */
   display: table;
   background-color: white;
   width: 100%;
-  border: solid 2px black;
+  border: solid 2px #879094;
   border-radius: 3em;
-  box-shadow: 3px 3px grey;
+  box-shadow: 5px 5px #9FAEB7;
   padding: 0rem 1rem;
   position: relative;
 }
@@ -415,19 +446,24 @@ input[type="checkbox"]:checked::before {
 }
 
 .school_details td {
-  width: auto;
+  width: 25%;
   /* border: solid black; */
   height: auto;
   padding: 0.5rem 2rem;
-  padding-right: 4rem;
+  padding-right: 0rem;
 }
 
 .username{
+  padding-left: 1rem;
   padding-top: 1rem;
 }
 
 .class_standing{
   padding-top: 1rem;
+}
+
+.major{
+  padding-left: 1rem;
 }
 
 .school_details h3{
@@ -441,17 +477,17 @@ input[type="checkbox"]:checked::before {
 }
 
 .profile_classes{
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
   background-color: white;
-  /* padding: 1rem 2rem; */
-  border: solid 2px black;
+  padding: 1rem 2rem;
+  border: solid 2px #879094;
   border-radius: 3em;
-  box-shadow: 3px 3px grey;
-  /* padding-left: 4rem;
-  padding-top: 2rem; */
+  box-shadow: 5px 5px #9FAEB7;
+  padding-left: 4rem;
+  /* padding-top: 2rem; */
   width: 100%;
   height: 100%;
   display: table;
@@ -460,7 +496,7 @@ input[type="checkbox"]:checked::before {
 .class_list{
   display: table-cell;
   vertical-align: middle;
-  border: solid black;
+  /* border: solid black; */
 }
 
 .class_list h2{
@@ -473,9 +509,8 @@ input[type="checkbox"]:checked::before {
   list-style: none;
   font-family: National, sans-serif;
   font-size: 1.5em;
+  padding-left: 0;
 }
-
-
 
 .chat_selection{
   height: 100vh;
@@ -489,14 +524,13 @@ input[type="checkbox"]:checked::before {
   overflow-x: hidden;
   overflow-y: auto;
   text-align: center;
-  height: 7.5vh;
 }
 
 .selection_header h2{
   font-size: 3em;
   font-family: CaveatBrush, cursive;
-  color: #ffb703;
-  text-shadow: 2px 2px #fb8500;
+  color: #79AE6A;
+  text-shadow: 3px 3px #DFEBD6;
 }
 
 .selection_groups{
@@ -512,23 +546,50 @@ input[type="checkbox"]:checked::before {
 
 .selection_groups li{
   text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .active_chat{
   border: solid #B7DEEF;
   background-color: #B7DEEF;
   font-family: Boogaloo, sans-serif;
-  font-size: 2.5em;
+  font-size: 2em;
   padding: 1.5rem 0.5rem;
   text-align: center;
+  padding-bottom: 0;
+  /* border: solid black; */
+  height: 8.5rem;
 }
 
-.chatname{
+.bottom_line_invisible{
+  border-bottom: solid 3px #B7DEEF;
+  padding-bottom: 2rem;
+  /* width: 80%; */
+}
+
+.inactive_chat{
+  border: solid #E3F2F8;
+  /* background-color: #B7DEEF; */
+  font-family: Boogaloo, sans-serif;
+  font-size: 2em;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  /* border: solid black; */
+  padding-bottom: 0;
+  height: 8.5rem;
+}
+
+.bottom_line{
+  border-bottom: solid 3px #219ebc;
+  padding-bottom: 2rem;
+  /* width: 80%; */
+}
+
+/* .chatname{
   font-family: Boogaloo, sans-serif;
   font-size: 2.5em;
   border-bottom: solid 3px #219ebc;
-  /* border: solid black; */
+  border: solid black;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 1rem;
@@ -536,12 +597,12 @@ input[type="checkbox"]:checked::before {
   padding-bottom: 1.5rem;
   padding-top: 0.5rem;
   text-align: center;
-}
+} */
 
 .chat_picture{
-  border: solid #fb8500;
+  border: solid #79AE6A;
   border-radius: 5em;
-  background-color: #fb8500;
+  background-color: #79AE6A;
   display: inline-block;
   padding: 0.5rem;
   margin-right: 1rem;
@@ -561,12 +622,11 @@ input[type="checkbox"]:checked::before {
 }
 
 .chat_box{
-  height: 100vh;
+  height: 100%;
   width: 70%;
 }
 
 .box_header{
-  height: 7.5vh;
   width: 100%;
   border-bottom: solid 0.3em #219ebc;
   text-align: center;
@@ -575,8 +635,8 @@ input[type="checkbox"]:checked::before {
 .box_header h2{
   font-size: 3em;
   font-family: CaveatBrush, cursive;
-  color: #ffb703;
-  text-shadow: 2px 2px #fb8500;
+  color: #79AE6A;
+  text-shadow: 3px 3px #DFEBD6;
 }
 
 .chat_text{
@@ -600,7 +660,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .sent_message_span {
-  background-color: #fb8500;
+  background-color: #219ebc;
   color: white;
   padding: 3rem;
   padding-top: .5rem;
@@ -616,6 +676,7 @@ input[type="checkbox"]:checked::before {
   display: table;
   /* border: solid black; */
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .text_input_wrapper{

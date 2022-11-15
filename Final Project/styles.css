@@ -313,6 +313,7 @@ input[type="checkbox"]:checked::before {
   display: table;
   height: 100vh;
   width: 100%;
+  position: relative;
   /* background-color: #E3F2F9; */
 }
 
@@ -518,6 +519,147 @@ input[type="checkbox"]:checked::before {
   border-right: solid 0.3em #219ebc;
 }
 
+.change_image{
+  position: relative;
+  padding-top: 1rem;
+}
+
+.edit_image{
+  position: absolute;
+  top: 0;
+  margin-left: 0.5rem;
+  font-size: 2em;
+}
+
+.edit_image:hover{
+  cursor: pointer;
+  color: #fb8500;
+}
+
+#cancel_button{
+  margin-right: 1rem;
+  background-color: white;
+  color: black;
+}
+
+#cancel_button:hover{
+  background-color: #ffb703;
+  border: solid #ffb703;
+  color: black;
+}
+
+.edit td {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.edit h3{
+  font-size: 1.5em;
+}
+
+.change {
+  padding-bottom: 0.5em;
+}
+
+.gender_select{
+  margin-top: 0.5rem;
+}
+
+#major_current{
+  font-size: 1em;
+}
+
+#minor_current{
+  font-size: 1em;
+}
+
+.username_input{
+  font-size: 0.9em;
+}
+
+.year_select{
+  font-size: 0.9em;
+}
+
+.majorminor_select {
+  font-size: 0.9em;
+}
+
+.class_list i{
+  transform: translate(0%, 20%);
+  margin-right: 0.5rem;
+}
+
+.class_list i:hover{
+  cursor: pointer;
+  color: #fb8500;
+}
+
+.apply_changes{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 90%;
+  background-color: #E0EAD6;
+  border: solid 1em #79AE6A;
+  z-index: 100;
+  text-align: center;
+  display: table;
+  visibility: hidden;
+}
+
+.apply_changes_wrapper{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.apply_changes h2{
+  font-family: Boogaloo, sans-serif;
+  font-size: 4em;
+}
+
+.apply_buttons{
+  margin-top: 3rem;
+}
+
+.apply_buttons button{
+  width: 15%;
+  padding: 0.3rem 1rem;
+  font-family: Boogaloo, sans-serif;
+  font-size: 2em;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#yes_button{
+  background-color: #219ebc;
+  border: solid #219ebc;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+#yes_button:hover{
+  background-color: #ffb703;
+  border: solid #ffb703;
+  color: black;
+}
+
+#no_button{
+  background-color: white;
+  color: black;
+  border: none;
+  letter-spacing: 0.1rem;
+  border: solid #219ebc;
+}
+
+#no_button:hover{
+  background-color: #ffb703;
+  border: solid #ffb703;
+  color: black;
+}
+
 .selection_header{
   width: 100%;
   border-bottom: solid 0.3em #219ebc;
@@ -642,7 +784,7 @@ input[type="checkbox"]:checked::before {
 .chat_text{
   display: grid;
   height: 92.5vh;
-  /* border: solid black; */
+  width: 100%;
   display: grid;
   gap: 0;
   grid-template-rows: 6fr 1fr;
@@ -651,12 +793,15 @@ input[type="checkbox"]:checked::before {
 .text_messages{
   grid-row-start: 1;
   grid-row-end: 2;
+  overflow-y: auto;
+  overflow-x: hidden;
   /* border: solid black; */
 }
 
 .sent_message {
   margin: 2rem;
   text-align: right;
+  /* border: solid black; */
 }
 
 .sent_message_span {
@@ -668,6 +813,7 @@ input[type="checkbox"]:checked::before {
   border-radius: 0.9em;
   font-family: National, sans-serif;
   font-size: 1.5em;
+  /* border: solid black; */
 }
 
 .text_input{

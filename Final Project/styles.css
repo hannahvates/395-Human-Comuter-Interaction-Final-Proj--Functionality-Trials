@@ -61,6 +61,7 @@
 .searchpage{
   text-align: center;
   height: 100vh;
+  position: relative;
   /* background-color: #E3F2F9; */
 }
 
@@ -212,39 +213,45 @@ input[type="checkbox"]:checked::before {
   color: black;
 }
 
-.searchpage_confirmation{
+/* .searchpage_confirmation{
   text-align: center;
   display: table;
   height: 100vh;
-  /* background-color: #E3F2F9; */
-}
+} */
+
 
 .confirmation{
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: solid 0.5em #023047;
+  z-index: 100;
+  text-align: center;
+  display: table;
+  width: 80%;
+  visibility: hidden;
 }
 
 .confirmation_wrapper{
+  display: table-cell;
+  vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
-  width: 100%;
+  /* height: auto;
+  width: 100%; */
+  background-color: white;
   padding-top: 3rem;
-  padding-bottom: 10rem;
-  /* background-color: #DFEBD5;; */
-  /* border-top: solid 1em #77AD6A;
-  border-bottom: solid 1em #77AD6A; */
-  /* border: solid 0.5em #77AD6A;
-  box-shadow: 1em 1em #DFEBD5; */
-  /* border: solid black; */
+  padding-bottom: 3rem;
 }
 
 .confirmation h2{
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: CaveatBrush, cursive;
   text-shadow: 3px 2px #023047;
-  font-size: 5.5em;
+  font-size: 5em;
   color: #8ecae6;
   /* margin-bottom: 2rem; */
 }
@@ -262,7 +269,7 @@ input[type="checkbox"]:checked::before {
   width: 80%;
 }
 
-.confirmation_options button{
+/* .confirmation_options button{
   padding: 0.3em auto;
   width: 30%;
   height: 5rem;
@@ -279,7 +286,7 @@ input[type="checkbox"]:checked::before {
   background-color: #ffb703;
   border: solid #ffb703;
   color: black;
-}
+} */
 
 .check_icon_wrapper{
   display: inline-block;
@@ -292,7 +299,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .check_icon{
-  font-size: 6em;
+  font-size: 5em;
   color: #219ebc;
   font-weight: bolder;
 }

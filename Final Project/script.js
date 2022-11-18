@@ -22,7 +22,7 @@ function sendMessage() { //Function that takes contents of text input and displa
   for (let i = 0; i < message_count; i++) {
     let child = document.createElement('div'); //Prepare value to attach to HTML
     child.className = "sent_message"; //Add sent_message class to the child
-    child.innerHTML = `<span class="sent_message_span">${message_list[current_chat_number][message_count-i-1]}</span>`; //Write contents of message to child
+    child.innerHTML = `<span class="sent_message_span">${message_list[current_chat_number][i]}</span>`; //Write contents of message to child
     message_obj.appendChild(child); //Append HTML for message
   }
 }

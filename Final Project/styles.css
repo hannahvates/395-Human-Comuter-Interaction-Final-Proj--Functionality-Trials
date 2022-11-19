@@ -797,6 +797,24 @@ input[type="checkbox"]:checked::before {
   grid-template-rows: 6fr 1fr;
 }
 
+.other_sent_message {
+  margin: 2rem;
+  text-align: left;
+  /* border: solid black; */
+}
+
+.other_sent_message_span {
+  background-color: darkgrey;
+  color: white;
+  padding: 3rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: 0.9em;
+  font-family: National, sans-serif;
+  font-size: 1.5em;
+  /* border: solid black; */
+}
+
 .text_messages{
   grid-row-start: 1;
   grid-row-end: 2;

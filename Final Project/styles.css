@@ -804,8 +804,8 @@ input[type="checkbox"]:checked::before {
 }
 
 .other_sent_message_span {
-  background-color: darkgrey;
-  color: white;
+  background-color: #E9E9EB;
+  color: black;
   padding: 3rem;
   padding-top: .5rem;
   padding-bottom: .5rem;

@@ -803,6 +803,14 @@ input[type="checkbox"]:checked::before {
   /* border: solid black; */
 }
 
+.other_sent_message_name{
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: National, sans-serif;
+  color: #8E8D94;
+  font-size: 1.1em;
+}
+
 .other_sent_message_span {
   background-color: #E9E9EB;
   color: black;

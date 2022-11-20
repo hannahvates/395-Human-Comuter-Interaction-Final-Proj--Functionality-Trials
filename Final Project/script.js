@@ -69,14 +69,14 @@ function loadMessages(class_number) { //Load the messages from the current chat 
   other_child.className = "other_sent_message";
 
   if (current_chat_number == 0) { //If in the Math 212 chat, change the previously sent messages to the ones in Math 212
-    other_child.innerHTML = `<span class="other_sent_message_span">Could someone explain Euler's to me again?</span>`;
+    other_child.innerHTML = `<div class="other_sent_message_name">Caroline Willow</div><span class="other_sent_message_span">Could someone explain Euler's to me again?</span>`;
   }
   if (current_chat_number == 1) { //If in the CS 395 chat, change the previously sent messages to the ones in CS 395
     let other_child1 = document.createElement('div');
     other_child1.className = "other_sent_message";
-    other_child1.innerHTML = `<span class="other_sent_message_span">I need help for the HTML HW!!!</span>`;
+    other_child1.innerHTML = `<div class="other_sent_message_name">David4Real</div><span class="other_sent_message_span">I need help for the HTML HW!!!</span>`;
     other_message_obj.append(other_child1);
-    other_child.innerHTML = `<span class="other_sent_message_span">Does anyone want to meet and study?</span>`;
+    other_child.innerHTML = `<div class="other_sent_message_name">Elle</div><span class="other_sent_message_span">Me too! Does anyone want to meet and study?</span>`;
   }
 
   other_message_obj.append(other_child);

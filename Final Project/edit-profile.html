@@ -58,41 +58,70 @@
 
       <div class="profilepage" style="width: 80%;">
         <div class="profile">
+          <div class="apply_changes">
+            <div class="apply_changes_wrapper">
+              <h2>Apply Changes?</h2>
+              <div class="apply_buttons">
+                <button type="button" name="button" id="no_button">No</button>
+                <button type="submit" name="button" id="yes_button" onclick="location.href='profile.html';">Yes</button>
+              </div>
+            </div>
+          </div>
           <div class="profile_wrapper">
             <div class="profile_information">
               <div class="edit_profile_button">
-                <button type="button" name="button" onclick="location.href='edit-profile.html';">Edit Profile</button>
+                <button type="button" name="button" onclick="location.href='profile.html';" id="cancel_button">Cancel</button>
+                <button type="submit" name="button">Submit</button>
               </div>
               <div class="details_image">
-                <div class="image">
-                  <img src="images/profile-filler.png" alt="">
+                <div class="image change_image">
+                  <img src="images/profile-filler.png" alt="" id="current_image"><i class="material-icons edit_image">edit</i>
                 </div>
                 <div class="name_pronouns">
                   <h2>John Doe</h2>
-                  <p>He/Him/His</p>
+                  <p><select id="gender" name="gender" class="gender_select">
+                  <option value="he">He/Him/His</option>
+                  <option value="she">She/Her/Hers</option>
+                  <option value="they">They/Them/Their</option>
+                </select></p>
                 </div>
               </div>
               <div class="details_details">
-                <div class="school_details">
+                <div class="school_details edit">
                     <table>
                       <tr>
-                        <td><div class="username">
+                        <td><div class="username change">
                           <h3>Username</h3>
-                          <p>John D</p>
+                          <p><input type="text" name="" value="" placeholder="John D" maxlength="20" class="username_input"></p>
                         </div></td>
-                        <td><div class="class_standing">
+                        <td><div class="class_standing change">
                           <h3>Year</h3>
-                          <p>Sophomore</p>
+                          <p><select id="class_year" name="class_year" class="year_select">
+                          <option value="freshman">Freshman</option>
+                          <option selected value="sophomore">Sophomore</option>
+                          <option value="junior">Junior</option>
+                          <option value="senior">Senior</option>
+                        </select></p>
                         </div></td>
                       </tr>
                       <tr>
                         <td><div class="major">
                           <h3>Major/s</h3>
-                          <p>Computer Science</p>
+                          <p id="major_current">Computer Science</p>
+                          <p><select id="majors" name="majors" multiple class="majorminor_select" size="2">
+                          <option selected value="cmsc">Computer Science</option>
+                          <option value="math">Mathematics</option>
+                          <option value="phil">Philosophy</option>
+                        </select></p>
                         </div></td>
                         <td><div class="minor">
                           <h3>Minor/s</h3>
-                          <p>None</p>
+                          <p id="minor_current">None</p>
+                          <p><select id="minors" name="minors" multiple class="majorminor_select" size="2">
+                          <option value="cmsc">Computer Science</option>
+                          <option value="math">Mathematics</option>
+                          <option value="phil">Philosophy</option>
+                        </select></p>
                         </div></td>
                       </tr>
                     </table>
@@ -102,9 +131,9 @@
                 <div class="class_list">
                   <h2>Classes</h2>
                   <ul>
-                    <li>MATH 212: Calculus II</li>
-                    <li>CMSC 301: Computer Organization</li>
-                    <li>CMSC 395: Human Computer Interaction</li>
+                    <li><i class="material-icons">close</i>MATH 212: Calculus II</li>
+                    <li><i class="material-icons">close</i>CMSC 301: Computer Organization</li>
+                    <li><i class="material-icons">close</i>CMSC 395: Human Computer Interaction</li>
                   </ul>
                 </div>
               </div>

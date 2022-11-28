@@ -26,13 +26,13 @@
             </a>
           </li>
           <li>
-            <a href="search.html" class="nav-link active">
+            <a href="search.html" class="nav-link text-white">
               <i class="material-icons bi pe-none me-2">search</i>
               Search
             </a>
           </li>
           <li>
-            <a href="chat.html" class="nav-link text-white">
+            <a href="chat.html" class="nav-link active">
               <i class="material-icons bi pe-none me-2">forum</i>
               Chat
             </a>
@@ -56,22 +56,49 @@
 
       <div class="b-example-divider b-example-vr" style="width: 0%;"></div>
 
-      <div class="searchpage_confirmation" style="width: 80%;">
-        <div class="confirmation">
-          <div class="confirmation_wrapper">
-            <div class="check_icon_wrapper">
-              <i class="material-icons check_icon">done</i>
-            </div>
-            <br><h2 id="class_added">Your classes have been added!</h2><br>
-          <!-- <img src="images/green-line.png" alt=""> -->
-          <div class="confirmation_options">
-            <button type="button" name="button" onclick="location.href='search.html';">Select More Classes</button>
-            <button type="button" name="button" onclick="location.href='chat.html';">Go To Chat Page</button>
+        <div class="chat_selection" style="width: 30%;">
+          <div class="selection_header">
+            <h2>Chats</h2>
           </div>
-          <!-- <img src="images/green-line.png" alt=""> -->
+          <div class="selection_groups">
+            <ul>
+              <li><div class="active_chat" id="cmsc_395" onclick="loadMessages(0)"><div class="bottom_line_invisible">
+                <!-- <div class="active_blocker"></div> -->
+                <div class="chat_picture">
+                  <img src="images/computer-icon.png" alt="">
+                </div>
+                CMSC 395</div>
+              </div></li>
+              <li><div class="inactive_chat" id="math_212" onclick="loadMessages(1)"><div class="bottom_line">
+                <div class="chat_picture">
+                  <img src="images/calculator-icon.png" alt="" id="calculator">
+                </div>
+                MATH 212</div>
+              </div></li>
+            </ul>
           </div>
         </div>
-     </div>
+        <div class="chat_box" style="width: 70%;">
+          <div class="box_header">
+            <h2>CMSC 395</h2>
+          </div>
+          <div class="chat_text">
+            <div class="text_messages" id="text_messages">
+              <div class="sent_message">
+                <span class="sent_message_span">Hi!</span>
+              </div>
+            </div>
+            <div class="text_input">
+              <div class="text_input_wrapper">
+                <i class="material-icons input_icons">add</i>
+                <input type="text" name="" value="" placeholder="Enter message here" id="text"><input type="submit" name="send_button" onclick="sendMessage()" value="Send" id="send">
+                <i class="material-icons input_icons">image</i>
+                <i class="material-icons input_icons">sentiment_satisfied</i>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

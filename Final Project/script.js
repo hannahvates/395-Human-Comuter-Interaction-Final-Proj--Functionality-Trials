@@ -209,11 +209,7 @@ var bio_class_1= (bio_class_list[0].class_1);
 var bio_class_2= (bio_class_list[0].class_2);
 var bio_class_3= (bio_class_list[0].class_3);
 
-
-
-
-
-document.getElementById("search_button").addEventListener("click",searchClassFunc)
+document.getElementById("search_button").addEventListener("click", searchClassFunc)
 
 
 function searchClassFunc(){
@@ -223,32 +219,74 @@ function searchClassFunc(){
   console.log(inputMajor)
   console.log(disp)
   if (inputMajor === "Computer Science"){
-    var compSciClasses =document.getElementsByClassName('compSci');
+    var compSciClasses = document.getElementsByClassName('compSci');
     var numCompSci=compSciClasses.length;
     for (var i=0; i<numCompSci;i++){
       compSciClasses[i].style.display='inline';
     }
+
+    var physClasses = document.getElementsByClassName('phys');
+    var numPhys=physClasses.length;
+    for (var i=0; i<numPhys;i++){
+      physClasses[i].style.display='none';
+    }
+
+    var bioClasses = document.getElementsByClassName('bio');
+    var numBio=bioClasses.length;
+    for (var i=0; i<numBio;i++){
+      bioClasses[i].style.display='none';
+    }
   }
   else if (inputMajor === "Physics")
   {
-    var physClasses =document.getElementsByClassName('phys');
+    var physClasses = document.getElementsByClassName('phys');
     var numPhys=physClasses.length;
     for (var i=0; i<numPhys;i++){
       physClasses[i].style.display='inline';
     }
+
+    var compSciClasses = document.getElementsByClassName('compSci');
+    var numCompSci=compSciClasses.length;
+    for (var i=0; i<numCompSci;i++){
+      compSciClasses[i].style.display='none';
+    }
+
+    var bioClasses = document.getElementsByClassName('bio');
+    var numBio=bioClasses.length;
+    for (var i=0; i<numBio;i++){
+      bioClasses[i].style.display='none';
+    }
   }
   else if (inputMajor === "Biology")
   {
-    var bioClasses =document.getElementsByClassName('bio');
+    var bioClasses = document.getElementsByClassName('bio');
     var numBio=bioClasses.length;
     for (var i=0; i<numBio;i++){
       bioClasses[i].style.display='inline';
+    }
+
+    var compSciClasses = document.getElementsByClassName('compSci');
+    var numCompSci=compSciClasses.length;
+    for (var i=0; i<numCompSci;i++){
+      compSciClasses[i].style.display='none';
+    }
+
+    var physClasses = document.getElementsByClassName('phys');
+    var numPhys=physClasses.length;
+    for (var i=0; i<numPhys;i++){
+      physClasses[i].style.display='none';
     }
   }
 
 }
 
+document.getElementById("submit_button").addEventListener("click", submitClasses);
 
+function submitClasses(){
+  let confirmation_box = document.getElementsByClassName("confirmation");
+  confirmation_box[0].style.display = 'inline';
 
-
-
+  setTimeout(() => {
+  confirmation_box[0].style.display = 'none';
+  }, 3000);
+}

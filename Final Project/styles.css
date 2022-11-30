@@ -229,14 +229,14 @@ input[type="checkbox"]:checked::before {
   border: solid 0.5em #023047;
   z-index: 100;
   text-align: center;
-  display: table;
+  /* display: table; */
   width: 80%;
-  visibility: hidden;
+  display: none;
 }
 
 .confirmation_wrapper{
-  display: table-cell;
-  vertical-align: middle;
+  /* display: table-cell;
+  vertical-align: middle; */
   margin-left: auto;
   margin-right: auto;
   /* height: auto;

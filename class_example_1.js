@@ -1,4 +1,4 @@
-fetch(class_example_1.json)
+fetch('class_example_1.json')
     .then(function (response) {
         return response.json();
         // The JSON data will arrive here

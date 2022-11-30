@@ -47,8 +47,8 @@
         <hr>
         <div class="profile_item_inactive">
           <a href="profile.html" class="d-flex align-items-center text-white text-decoration-none nav-link">
-            <!-- <i class="material-icons rounded-circle me-2" style="font-size: 1.5em;">person</i> -->
-            <img src="images/profile-filler.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <i class="material-icons rounded-circle me-2" style="font-size: 1.5em;">person</i>
+            <!-- <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2"> -->
             <strong>John Doe</strong>
           </a>
         </div>
@@ -57,56 +57,49 @@
       <div class="b-example-divider b-example-vr" style="width: 0%;"></div>
 
       <div class="searchpage" style="width: 80%;">
-          <div class="confirmation">
-            <div class="confirmation_wrapper">
-              <div class="check_icon_wrapper">
-                <i class="material-icons check_icon">done</i>
-              </div>
-              <br><h2 id="class_added">Your classes have been added!</h2><br>
-            </div>
+        <div class="search_classes">
+          <h2>Search for Classes</h2>
+          <div class="searchform">
+            <input type="text" id = "userInput" name="" value="" placeholder="Course/Subject">
+            <button type="submit" name="button" id="search_button"><i class="material-icons search-icon">search</i></button>
           </div>
-          <div class="search_classes">
-            <h2>Search for Classes</h2>
-            <div class="searchform">
-              <input type="text" name="" value="" placeholder="Course/Subject">
-              <button type="submit" name="button" id="search_button"><i class="material-icons search-icon">search</i></button>
-            </div>
+        </div>
+        <div class="search_results">
+          <div class="results_box">
+            <table>
+              <tr class = "compSci">
+                <td class="classname "><input type="checkbox" name="class1" id="class1" value=""><span>CMSC 150: Introduction to Computing</span></td>
+              </tr>
+              <tr class = "compSci">
+                <td class="classname "><input type="checkbox" name="class2" id="class2" value="">CMSC 221: Data Structures</td>
+              </tr>
+              <tr class = "compSci">
+                <td class="classname "><input type="checkbox" name="class3" id="class3" value="">CMSC 222: Discrete Structures</td>
+              </tr >
+              <tr class = "compSci">
+                <td class="classname"><input type="checkbox" name="class4" id="class4" value="">CMSC 240: Software Systems Development</td>
+              </tr>
+              <tr class = "phys">
+                <td class="classname" ><input type="checkbox" name="class4" id="class4" value="">CMSC 301: Computer Organization</td>
+              </tr>
+              <tr class = "phys">
+                <td class="classname "><input type="checkbox" name="class4" id="class4" value="">CMSC 315: Algorithms</td>
+              </tr>
+              <tr class = "phys">
+                <td class="classname "><input type="checkbox" name="class4" id="class4" value="">CMSC 323: Design and Implementation of Programming Languages</td>
+              </tr>
+              <tr class = "bio">
+                <td class="classname"><input type="checkbox" name="class4" id="class4" value="">CMSC 325: Database Systems</td>
+              </tr>
+              <tr class = "bio">
+                <td class="classname"><input type="checkbox" name="class4" id="class4" value="">CMSC 395: Human Computer Interaction</td>
+              </tr>
+            </table>
           </div>
-          <div class="search_results">
-            <div class="results_box">
-              <table>
-                <tr>
-                  <td class="classname"><input type="checkbox" name="class1" id="class1" value=""><span>CMSC 150: Introduction to Computing</span></td>
-                </tr>
-                <tr>
-                  <td class="classname"><input type="checkbox" name="class2" id="class2" value="">CMSC 221: Data Structures</td>
-                </tr>
-                <tr>
-                  <td class="classname"><input type="checkbox" name="class3" id="class3" value="">CMSC 222: Discrete Structures</td>
-                </tr>
-                <tr>
-                  <td class="classname"><input type="checkbox" name="class4" id="class4" value="">CMSC 240: Software Systems Development</td>
-                </tr>
-                <tr>
-                  <td class="classname"><input type="checkbox" name="class4" id="class4" value="">CMSC 301: Computer Organization</td>
-                </tr>
-                <tr>
-                  <td class="classname"><input type="checkbox" name="class4" id="class4" value="">CMSC 315: Algorithms</td>
-                </tr>
-                <tr>
-                  <td class="classname"><input type="checkbox" name="class4" id="class4" value="">CMSC 323: Design and Implementation of Programming Languages</td>
-                </tr>
-                <tr>
-                  <td class="classname"><input type="checkbox" name="class4" id="class4" value="">CMSC 325: Database Systems</td>
-                </tr>
-                <tr>
-                  <td class="classname"><input type="checkbox" name="class4" id="class4" value="">CMSC 395: Human Computer Interaction</td>
-                </tr>
-              </table>
-            </div>
-            <button type="submit" name="button" id="submit_button">Submit</button>
-          </div>
+          <button type="submit" name="button" id="submit_button" onclick="location.href='search-confirmation.html';">Submit</button>
+        </div>
      </div>
+      <script type="text/javascript" src="script.js"></script>
     </main>
   </body>
 </html>

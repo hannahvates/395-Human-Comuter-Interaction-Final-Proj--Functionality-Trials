@@ -893,3 +893,35 @@ input[type="checkbox"]:checked::before {
   font-size: 2em;
   transform: translate(0%, 30%);
 }
+
+
+
+/*.compSci{
+
+  visibility: hidden;
+
+}
+
+.phys{
+
+  visibility: hidden;
+
+}
+
+.bio{
+
+  visibility: hidden;
+
+}*/
+
+.compSci{
+  display: none;
+}
+
+.phys{
+  display: none;
+}
+
+.bio{
+  display: none;
+}

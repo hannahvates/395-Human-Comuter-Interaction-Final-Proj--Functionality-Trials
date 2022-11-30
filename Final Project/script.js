@@ -107,3 +107,148 @@ function loadMessages(class_number) { //Load the messages from the current chat 
     message_obj.appendChild(child); //Append HTML for message
   }
 }
+
+//SEARCH
+
+var data = '[\n' +
+    '          {\n' +
+    '          "major_name":"Computer Science",\n' +
+    '            "major_classes": [\n' +
+    '              {\n' +
+    '                "class_1": "315 Algorithms",\n' +
+    '                "course_name": "Algorithms",\n' +
+    '                "course_number": "315"\n' +
+    '              },\n' +
+    '              {\n' +
+    '                "class_2": "395 Human-Computer Interaction",\n' +
+    '                "course_name": "Human-Computer Interaction",\n' +
+    '                "course_number": "395"\n' +
+    '              },\n' +
+    '              {\n' +
+    '                "class_3": "301 Computer Organization",\n' +
+    '                "course_name": "Computer Organization",\n' +
+    '                "course_number": "301"\n' +
+    '              },\n' +
+    '              {\n' +
+    '                "class_4": "150 Introduction to Computing",\n' +
+    '                "course_name": "Introduction to Computing",\n' +
+    '                "course_number": "150"\n' +
+    '              }\n' +
+    '            ]\n' +
+    '          },\n' +
+    '\n' +
+    '          {\n' +
+    '          "major_name":"Physics",\n' +
+    '            "major_classes": [\n' +
+    '              {\n' +
+    '                "class_1": " Algorithms",\n' +
+    '                "course_name": "Algorithms",\n' +
+    '                "course_number": "315"\n' +
+    '              },\n' +
+    '              {\n' +
+    '                "class_2": "315 Algorithms",\n' +
+    '                "course_name": "Algorithms",\n' +
+    '                "course_number": "315"\n' +
+    '              },\n' +
+    '              {\n' +
+    '                "class_1": "315 Algorithms",\n' +
+    '                "course_name": "Algorithms",\n' +
+    '                "course_number": "315"\n' +
+    '              }\n' +
+
+    '            ]\n' +
+    '          },\n' +
+
+    '          {\n' +
+    '            "major_name":"Biology",\n' +
+    '              "major_classes": [\n' +
+    '                {\n' +
+    '                  "class_1": "315 Algorithms",\n' +
+    '                  "course_name": "Algorithms",\n' +
+    '                  "course_number": "315"\n' +
+    '                }\n' +
+    '              ]\n' +
+    '          },\n' +
+    '              {\n' +
+    '                "class_1": "315 Algorithms",\n' +
+    '                "course_name": "Algorithms",\n' +
+    '                "course_number": "315"\n' +
+    '              },\n' +
+    '          {\n' +
+    '            "major_name":"",\n' +
+    '              "major_classes": [\n' +
+    '                {\n' +
+    '                  "class_1": "315 Algorithms",\n' +
+    '                  "course_name": "Algorithms",\n' +
+    '                  "course_number": "315"\n' +
+    '                }\n' +
+    '              ]\n' +
+    '          }\n' +
+    '    ]\n';
+
+
+var mydata = JSON.parse(data);
+var comp_sci = (mydata[0].major_name);
+var physics = (mydata[1].major_name);
+var biology = (mydata[2].major_name);
+
+var comp_sci_class_list= (mydata[0].major_classes);
+var comp_sci_class_1= (comp_sci_class_list[0].class_1);
+var comp_sci_class_2= (comp_sci_class_list[1].class_2);
+var comp_sci_class_3= (comp_sci_class_list[0].class_3);
+var comp_sci_class_4= (comp_sci_class_list[0].class_4);
+
+var phys_class_list= (mydata[1].major_classes);
+var phys_class_1= (phys_class_list[0].class_1);
+var phys_class_2= (phys_class_list[1].class_2);
+var phys_class_3= (phys_class_list[2].class_3);
+
+
+var bio_class_list= (mydata[2].major_classes);
+var bio_class_1= (bio_class_list[0].class_1);
+var bio_class_2= (bio_class_list[0].class_2);
+var bio_class_3= (bio_class_list[0].class_3);
+
+
+
+
+
+document.getElementById("search_button").addEventListener("click",searchClassFunc)
+
+
+function searchClassFunc(){
+  var inputMajor = document.getElementById("userInput").value;
+  var disp = document.getElementsByClassName("compSci");
+
+  console.log(inputMajor)
+  console.log(disp)
+  if (inputMajor === "Computer Science"){
+    var compSciClasses =document.getElementsByClassName('compSci');
+    var numCompSci=compSciClasses.length;
+    for (var i=0; i<numCompSci;i++){
+      compSciClasses[i].style.display='inline';
+    }
+  }
+  else if (inputMajor === "Physics")
+  {
+    var physClasses =document.getElementsByClassName('phys');
+    var numPhys=physClasses.length;
+    for (var i=0; i<numPhys;i++){
+      physClasses[i].style.display='inline';
+    }
+  }
+  else if (inputMajor === "Biology")
+  {
+    var bioClasses =document.getElementsByClassName('bio');
+    var numBio=bioClasses.length;
+    for (var i=0; i<numBio;i++){
+      bioClasses[i].style.display='inline';
+    }
+  }
+
+}
+
+
+
+
+

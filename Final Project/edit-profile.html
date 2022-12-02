@@ -58,11 +58,11 @@
 
       <div class="profilepage" style="width: 80%;">
         <div class="profile">
-          <div class="apply_changes">
+          <div class="apply_changes" id="displayConfirmation">
             <div class="apply_changes_wrapper">
               <h2>Apply Changes?</h2>
               <div class="apply_buttons">
-                <button type="button" name="button" id="no_button">No</button>
+                <button type="button" name="button" id="no_button" onclick="hideConfirmation()">No</button>
                 <button type="submit" name="button" id="yes_button" onclick="location.href='profile.html';">Yes</button>
               </div>
             </div>
@@ -71,7 +71,7 @@
             <div class="profile_information">
               <div class="edit_profile_button">
                 <button type="button" name="button" onclick="location.href='profile.html';" id="cancel_button">Cancel</button>
-                <button type="submit" name="button">Submit</button>
+                <button type="submit" name="button" onclick="displayConfirmation()">Submit</button>
               </div>
               <div class="details_image">
                 <div class="image change_image">
@@ -131,9 +131,9 @@
                 <div class="class_list">
                   <h2>Classes</h2>
                   <ul>
-                    <li><i class="material-icons">close</i>MATH 212: Calculus II</li>
-                    <li><i class="material-icons">close</i>CMSC 301: Computer Organization</li>
-                    <li><i class="material-icons">close</i>CMSC 395: Human Computer Interaction</li>
+                    <li onclick="removeClass(this)" id="curr_class"><i class="material-icons">close</i>MATH 212: Calculus II</li>
+                    <li onclick="removeClass(this)" id="curr_class"><i class="material-icons">close</i>CMSC 301: Computer Organization</li>
+                    <li onclick="removeClass(this)" id="curr_class"><i class="material-icons">close</i>CMSC 395: Human Computer Interaction</li>
                   </ul>
                 </div>
               </div>
@@ -142,5 +142,6 @@
         </div>
      </div>
     </main>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

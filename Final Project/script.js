@@ -290,3 +290,15 @@ function submitClasses(){
   confirmation_box[0].style.display = 'none';
   }, 3000);
 }
+
+function removeClass(theClass) {
+  theClass.remove();
+}
+
+function displayConfirmation() {
+  document.getElementById("displayConfirmation").style.visibility = "visible";
+}
+
+function hideConfirmation() {
+  document.getElementById("displayConfirmation").style.visibility = "hidden";
+}

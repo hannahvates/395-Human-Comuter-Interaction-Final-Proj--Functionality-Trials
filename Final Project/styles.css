@@ -199,7 +199,6 @@ input[type="checkbox"]:checked::before {
   margin-right: 0;
   padding: 0.3em auto;
   width: 15%;
-  font-size: 1.8em;
   font-family: Boogaloo, sans-serif;
   background-color: #219ebc;
   border: solid #219ebc;
@@ -399,7 +398,6 @@ input[type="checkbox"]:checked::before {
   border: solid black;
   border-radius: 0.8em;
   padding: 1em;
-  width: 11em;
 }
 
 .name_pronouns{
@@ -698,6 +696,55 @@ input[type="checkbox"]:checked::before {
   margin-bottom: 0rem;
 }
 
+
+@media(min-width: 1000px) {
+  #cmsc_395_line {
+      font-size: 2rem;
+  }
+
+  #math_212_line {
+      font-size: 2rem;
+  }
+
+  .other_sent_message_span {
+      font-size: 1.5em;
+      padding: 3rem;
+  }
+
+  #submit_button {
+    font-size: 1.8em;
+  }
+
+  .image img{
+    width: 11em;
+  }
+}
+
+@media(min-width: 500px) and (max-width: 999px) {
+  #cmsc_395_line {
+      font-size: 1.2rem;
+  }
+
+  #math_212_line {
+      font-size: 1.2rem;
+  }
+
+  .other_sent_message_span {
+    font-size: 1em;
+    color: red;
+    padding: 1rem;
+  }
+
+  #submit_button {
+    font-size: 1em;
+  }
+
+  .image img{
+    width: 6em;
+  }
+}
+
+
 .active_chat{
   border: solid #B7DEEF;
   background-color: #B7DEEF;
@@ -814,12 +861,10 @@ input[type="checkbox"]:checked::before {
 .other_sent_message_span {
   background-color: #E9E9EB;
   color: black;
-  padding: 3rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
   border-radius: 0.9em;
   font-family: National, sans-serif;
-  font-size: 1.5em;
   /* border: solid black; */
 }
 

@@ -696,55 +696,6 @@ input[type="checkbox"]:checked::before {
   margin-bottom: 0rem;
 }
 
-
-@media(min-width: 1000px) {
-  #cmsc_395_line {
-      font-size: 2rem;
-  }
-
-  #math_212_line {
-      font-size: 2rem;
-  }
-
-  .other_sent_message_span {
-      font-size: 1.5em;
-      padding: 3rem;
-  }
-
-  #submit_button {
-    font-size: 1.8em;
-  }
-
-  .image img{
-    width: 11em;
-  }
-}
-
-@media(min-width: 500px) and (max-width: 999px) {
-  #cmsc_395_line {
-      font-size: 1.2rem;
-  }
-
-  #math_212_line {
-      font-size: 1.2rem;
-  }
-
-  .other_sent_message_span {
-    font-size: 1em;
-    color: red;
-    padding: 1rem;
-  }
-
-  #submit_button {
-    font-size: 1em;
-  }
-
-  .image img{
-    width: 6em;
-  }
-}
-
-
 .active_chat{
   border: solid #B7DEEF;
   background-color: #B7DEEF;
@@ -969,4 +920,56 @@ input[type="checkbox"]:checked::before {
 
 .bio{
   display: none;
+}
+
+@media(min-width: 1100px){
+  #cmsc_395_line {
+      font-size: 2rem;
+  }
+
+  #math_212_line {
+      font-size: 2rem;
+  }
+
+  .other_sent_message_span {
+      font-size: 1.5em;
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+
+  #submit_button {
+    font-size: 1.8em;
+  }
+
+  .image img{
+    width: 11em;
+  }
+}
+
+@media(min-width: 500px) and (max-width: 1099px) {
+  #cmsc_395_line {
+      font-size: 1.2rem;
+  }
+
+  #math_212_line {
+      font-size: 1.2rem;
+  }
+
+  .other_sent_message_span {
+    font-size: 1em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #submit_button {
+    font-size: 1em;
+  }
+
+  .image img{
+    width: 8em;
+  }
+
+  .name_pronouns h2{
+    font-size: 2.8em;
+  }
 }
